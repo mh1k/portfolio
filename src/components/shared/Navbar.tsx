@@ -90,13 +90,13 @@ const Navbar = () => {
                   About
                 </Link>
                 <Link
-                  href="/project"
+                  href="/projects"
                   className=" relative py-[1.3rem] font-regular text-lg  transition-all duration-300 before:absolute before:bottom-0 before:left-1/2 before:h-[0.14rem] before:w-0 before:bg-white before:-translate-x-1/2 before:duration-300 hover:before:w-full"
                 >
                   Project
                 </Link>
                 <Link
-                  href="/project"
+                  href="/blogs"
                   className=" relative py-[1.3rem] font-regular text-lg  transition-all duration-300 before:absolute before:bottom-0 before:left-1/2 before:h-[0.14rem] before:w-0 before:bg-white before:-translate-x-1/2 before:duration-300 hover:before:w-full"
                 >
                   Blogs

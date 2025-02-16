@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Spotlight } from "@/components/ui/spotlight-new";
-import Animation from "./animation";
+import Animation from "./Animation";
 
 const HeroSection = () => {
   return (

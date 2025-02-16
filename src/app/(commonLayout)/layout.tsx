@@ -1,4 +1,6 @@
 import { ThemeProvider } from "@/components/provider/theme-provider";
+import Footer from "@/components/shared/Footer";
+import Navbar from "@/components/shared/Navbar";
 import { InteractiveGridPattern } from "@/components/ui/interactive-grid-pattern";
 import { cn } from "@/lib/utils";
 import { Inter, Poppins } from "next/font/google";
@@ -29,6 +31,7 @@ const layout = ({
         <main
           className={`${poppins.className} bg-gray-100 dark:bg-[#0b1120]  dark:text-white`}
         >
+          <Navbar></Navbar>
           <InteractiveGridPattern
             className={cn(
               "[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]",
@@ -40,7 +43,10 @@ const layout = ({
             squaresClassName="transition duration-200 data-[hover]:fill-blue-500"
           />
 
-          <main className="pointer-events-none relative z-10 ">{children}</main>
+          <main className="pointer-events-none relative z-20 ">
+            {children}
+          </main>
+          <Footer></Footer>
         </main>
       </ThemeProvider>
     </>
